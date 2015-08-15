@@ -4,7 +4,7 @@ These are my personal prelude settings. For Emacs prelude, please refer to https
 ## How to use it
 
 ### Install emacs
-* On Mac OSX: brew install emacs --upgrade
+* On Mac OSX: `brew install emacs --upgrade`
 
 ### Get the Prelude
 ```

@@ -25,18 +25,22 @@
 ;; (prelude-require-package 'solarized-theme)
 ;; (load-theme 'solarized-dark t)
 
-
 ;; Enable wheel-mouse scrolling
 (prelude-require-packages '(smooth-scroll))
 (require 'mouse)
 (xterm-mouse-mode t)
-;; (defun track-mouse (e))
+(defun track-mouse (e))
 (setq mouse-sel-mode t)
+
+;; Enable selecting using shift key
+(global-unset-key (vector (list 'shift 'left)))
+(global-unset-key (vector (list 'shift 'right)))
+(global-unset-key (vector (list 'shift 'up)))
+(global-unset-key (vector (list 'shift 'down)))
+(setq shift-selection-mode t)
 
 ;; enable clipboard in emacs
 (setq x-select-enable-clipboard t)
-
-;; (require 'smooth-scrolling)
 
 (provide 'MyConfig)
 ;;; myConfig.el ends here

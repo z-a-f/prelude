@@ -1,4 +1,3 @@
-
 ;; ----------------------------------------------------------------------------
 ;; Custom configuration from Prelude documentation
 ;; ----------------------------------------------------------------------------
@@ -10,7 +9,7 @@
 ; (setq prelude-clean-whitespace-on-save nil)
 
 ;; Disable spellchecking on the fly
-; (setq prelude-flyspell nil)
+(setq prelude-flyspell nil)
 
 ;; Disable arrow keys completely
 ; (setq guru-warn-only nil)
@@ -21,20 +20,9 @@
 ;; Set C-a as a default (goto first column)
 ; (global-set-key [remap move-beginning-of-line] 'move-beginning-of-line)
 
-;; If you are searching in large databases and your machine slow uncomment 
+;; If you are searching in large databases and your machine slow uncomment
 ;; the following
 ; (setq flx-ido-threshold 1000)
 
 ;; Or disable the improved sorting algorithm
 ; (flx-ido-mode -1)
-
-
-;; ----------------------------------------------------------------------------
-;; My custom configuration
-;; ----------------------------------------------------------------------------
-
-;; Enable the line numbers by default
-(global-linum-mode 1)
-
-;; Separate line numbers from text
-(setq linum-format "%d ")
